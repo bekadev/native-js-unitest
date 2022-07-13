@@ -1,4 +1,5 @@
-// const sudent = {
+// export type StudentType = {
+//     id: number,
 //     name: 'beka',
 //     age: 21,
 //     isDone: true
@@ -15,7 +16,7 @@ export type AddressType = {
 
 export type HouseType = {
     buildedAt: number
-    repaired: false
+    repaired: boolean
     address: AddressType
 }
 
