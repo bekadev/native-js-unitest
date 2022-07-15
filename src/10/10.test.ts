@@ -1,4 +1,4 @@
-import {makeHairStyle, moveUser, UserType, UserWithLapTopType} from './10'
+import {makeHairStyle, moveUser, update, UserType, UserWithLapTopType} from './10'
 
 
 
@@ -39,3 +39,26 @@ test('', () =>{
     expect(user.laptop).toBe(awesomeUser.laptop)
     expect(awesomeUser.address.city).toBe('Astana')
 })
+
+test('', () =>{
+    let user: UserWithLapTopType = {
+        name: 'Beka',
+        hair: 20,
+        address: {
+            city: 'Almaty',
+            house: 63
+        },
+        laptop: {
+            title: 'MacBook'
+        }
+    }
+
+    const userCopy = update(user, 'Lenova')
+
+    expect(user).not.toBe(userCopy)
+    expect(user.address).toBe(userCopy.address)
+    expect(user.laptop).not.toBe(userCopy.laptop)
+    expect(userCopy.laptop.title).toBe('Lenova')
+    expect(user.laptop.title).toBe('MacBook')
+})
+
