@@ -1,9 +1,3 @@
-// export type StudentType = {
-//     id: number,
-//     name: 'beka',
-//     age: 21,
-//     isDone: true
-// }
 
 export type StreetType = {
     title: string
