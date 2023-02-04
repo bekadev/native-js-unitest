@@ -21,10 +21,6 @@ export function makeHairStyle(u: UserType, power: number) {
 
 export function moveUser(u: UserWithLapTopType , city: string) {
     const copy = {...u, address: {...u.address, city: city}}
-
-    // copy.address = {...copy.address, city: city}
-    // test
-
     return copy
 }
 
