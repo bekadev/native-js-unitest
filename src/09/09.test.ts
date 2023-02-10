@@ -39,9 +39,7 @@ test('', () => {
 
 test('', () => {
     let users = 100
-
     let admins = users
-
     admins = 101
 
 })
